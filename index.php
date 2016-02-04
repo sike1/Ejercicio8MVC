@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+//Raul Comemela
 
 $_SESSION['jugador'] = $_GET['Nusuario'];
 $_SESSION['aciertos'] = 0;
