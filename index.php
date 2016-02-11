@@ -11,19 +11,13 @@ $_SESSION['tiempo_total'] = "";
 
 require_once("bd_acceso.php");
 
-$jugadores = comprobarUsuario();
+$jugador = comprobarUsuario($_POST['Nusuario']);
+echo $_POST['Nusuario'];
+if($_POST) {
 
-foreach($jugadores as $jugador => $value){
-    
-      $jugador['jugador'];
-		echo($value);
-}
+		if($_POST['Nusuario'] != '') {
 
-if($_GET) {
-
-		if(!empty($_SESSION['jugador']) && $_SESSION['jugador'] != '') {
-
-			if(!$jugador == $_SESSION['jugador']) {
+			if(!$jugador["jugador"] == $_POST['Nusuario']) {
 				header("location: pag1_controlador.php");
 				$controlador = 2;
 				$_SESSION['comprobar0'] = $controlador;	//Aquí controlamos que no puede ni refrescar ni volver atrás usando lo conseguido

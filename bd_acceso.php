@@ -2,14 +2,13 @@
 require("seguridad/mysql.inc.php");	//Aquí incluimos los datos de la conexión (host, usuario, pass y bd)
 require("bd_abstraccion.php");
 
-
-function comprobarUsuario(){		//Esta función sirve para saber si el usuario que introducimos ya existe en la BD
+function comprobarUsuario2($jugador){		//Esta función sirve para saber si el usuario que introducimos ya existe en la BD
 	require("seguridad/mysql.inc.php");
   // Conectar con la base de datos
   $conexion = crear_conexion($host,$usuario,$pass);
  
   // Ejecutar la consulta SQL
-  $resultado = consulta_base_de_datos("SELECT jugador FROM jugadores WHERE jugador = '".$_SESSION['jugador']."'", $bd, $conexion);
+  $resultado = consulta_base_de_datos("SELECT jugador FROM jugadores WHERE jugador = '".$jugador."'", $bd, $conexion);
  
   // Crear el array de elementos para la capa de la vista
   $jugadores = array();
@@ -27,10 +26,28 @@ function comprobarUsuario(){		//Esta función sirve para saber si el usuario que
   
 }
 
+function comprobarUsuario($email){
+require("seguridad/mysql.inc.php");
+$conexion1 = mysql_connect ("localhost","root","1234") or die ("Imposible conectar"); 
+
+    
+mysql_select_db('ejercicio8',$conexion1);
+
+   $datos="SELECT jugador FROM `jugadores` WHERE jugador='".$email."'";
+
+   $consulta=mysql_query($datos,$conexion1);
+
+   $consultaf = mysql_fetch_array($consulta);
+
+echo $consulta["jugador"];
+       return $consultaf;
+   
+}
+
 
 function jugadoresMenosFallos(){
 	require("seguridad/mysql.inc.php");
-  // Conectar con la base de datos
+        // Conectar con la base de datos
   $conexion = crear_conexion($host,$usuario,$pass);
  
   // Ejecutar la consulta SQL
@@ -55,7 +72,7 @@ function jugadoresMasRapidos(){
   $conexion = crear_conexion($host,$usuario,$pass);
  
   // Ejecutar la consulta SQL
-  $resultado = consulta_base_de_datos("SELECT * FROM jugadores ORDER BY tiempo,fallos LIMIT 5", "ejercicio8", $conexion);
+  $resultado = consulta_base_de_datos("SELECT * FROM jugadores ORDER BY tiempo,fallos LIMIT 5", $bd, $conexion);
  
   // Crear el array de elementos para la capa de la vista
   $jugadores = array();
