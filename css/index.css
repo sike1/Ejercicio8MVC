@@ -3,14 +3,7 @@ body{
 	overflow: hidden;
 }
 
-#div1{
-	float: left;
-	/*border: 1px solid black;*/
-	width: 30%;
-	height: 50%;
-	margin-left: 50%;
-	padding: 0;
-}
+
 
 #div2{
 	float: right;
@@ -105,7 +98,7 @@ a:link
 	/*border: 1px solid black;*/
 	width: 30%;
 	height: 50%;
-	margin-left: 23.5%;
+	margin-left: 34%;
 	padding: 0;
 }
 
