@@ -1,8 +1,7 @@
 <?php 
 session_start();
-//Raul Comemela
 
-$_SESSION['jugador'] = $_GET['Nusuario'];
+$_SESSION['jugador'] = $_POST['Nusuario'];
 $_SESSION['aciertos'] = 0;
 $_SESSION['fallos'] = 0;
 $_SESSION['tiempo_inicio'] = "";
