@@ -10,8 +10,8 @@ $inicio = new DateTime($inicio);
 $_SESSION['tiempo_inicio'] = $inicio;
 
 
-	if($_GET) {
-		if($_GET['Nrespuesta'] == 'correcta') {
+	if($_POST) {
+		if($_POST['Nrespuesta'] == 'correcta') {
 			$_SESSION['aciertos']++;
 			unset($_SESSION['comprobar0']);
 			$controlador = 2;

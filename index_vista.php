@@ -3,6 +3,7 @@
 	<title>Portada</title>
 	<meta charset="utf-8">
 	<LINK REL="stylesheet" TYPE="text/css" HREF="css/index.css">
+        <link rel="shortcut icon" href="./images/portada.png" type="image/png" />
 </head>
 
 <body>

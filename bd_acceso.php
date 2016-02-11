@@ -4,10 +4,11 @@ require("bd_abstraccion.php");
 
 function comprobarUsuario($jug){
 require("seguridad/mysql.inc.php");
-$conexion1 = mysql_connect ("localhost","root","1234") or die ("Imposible conectar"); 
+
+$conexion1 = mysql_connect ($host,$usuario,$pass) or die ("Imposible conectar"); 
 
     
-mysql_select_db('ejercicio8',$conexion1);
+mysql_select_db($bd,$conexion1);
 
    $datos="SELECT jugador FROM `jugadores` WHERE jugador='".$jug."'";
 

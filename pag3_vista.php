@@ -3,6 +3,8 @@
 	<title>Pregunta 3</title>
 	<meta charset="utf-8">
 	<LINK REL="stylesheet" TYPE="text/css" HREF="css/paginas.css">
+        <link rel="shortcut icon" href="./images/portada.png" type="image/png" />
+
 </head>
 
 <body>
@@ -21,7 +23,7 @@
 
 <img src="images/03.png" id="img1">
 
-<form name='form1' class="form1" action='pag3_controlador.php' method='get'>
+<form name='form1' class="form1" action='pag3_controlador.php' method='post'>
 
 	<input type='radio' name='Nrespuesta' id="respuesta" class="respuesta" value='falsa1'>Poochie</br>
 	<input type='radio' name='Nrespuesta' id="respuesta" class="respuesta" value='correcta'>Pica</br>

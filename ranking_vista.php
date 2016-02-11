@@ -3,6 +3,8 @@
     	  <title>Ranking</title>
         <meta charset="UTF-8">
         <LINK REL="stylesheet" TYPE="text/css" HREF="css/ranking.css">
+        <link rel="shortcut icon" href="./images/portada.png" type="image/png" />
+
     </head>
     <body>
     

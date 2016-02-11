@@ -7,8 +7,8 @@ $jugador = $_SESSION['jugador'];
 $aciertos = $_SESSION['aciertos'];
 $fallos = $_SESSION['fallos'];
 
-if($_GET) {
-	if($_GET['Nrespuesta'] == 'correcta') {
+if($_POST) {
+	if($_POST['Nrespuesta'] == 'correcta') {
 		$_SESSION['aciertos']++;
 		unset($_SESSION['comprobar2']);
 		$controlador = 2;
