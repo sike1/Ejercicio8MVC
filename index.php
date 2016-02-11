@@ -9,15 +9,15 @@ $_SESSION['tiempo_inicio'] = "";
 $_SESSION['tiempo_total'] = "";
 
 
-//require_once("bd.acceso.php");
+require_once("bd_acceso.php");
 
-//$jugadores = comprobarUsuario();
+$jugadores = comprobarUsuario();
 
-/*foreach($jugadores as $jugador => $value){
+foreach($jugadores as $jugador => $value){
     
-      //$jugador['jugador'];
+      $jugador['jugador'];
 		echo($value);
-}*/
+}
 
 if($_GET) {
 

@@ -10,12 +10,12 @@ $conexion = mysql_connect ($host,$usuario,$pass) or die ("Ha sido imposible real
 $sql = "CREATE database Ejercicio8";	//Ejercicio8
 
 $insertar = mysql_query($sql,$conexion);
-/*if(!$insertar){ 
+if(!$insertar){ 
     echo 'No se ha podido crear la base de datos'; 
 
 }else{ 
     echo 'Perfecto, base de datos creada correctamente'; 
-}*/
+}
 
 mysql_select_db('Ejercicio8',$conexion);		//Ejercicio8
 
@@ -27,20 +27,20 @@ mysql_select_db('Ejercicio8',$conexion);		//Ejercicio8
                 )";
             
         $crear_tabla=mysql_query($tabla,$conexion);
-        /*if(!$crear_tabla){
+        if(!$crear_tabla){
             echo 'No se ha podido crear la tabla en la base de datos';
             }else{
                 echo 'Perfecto, tabla creada correctamente'; 
-            }*/
+            }
             
 	     $datos="INSERT INTO `jugadores` (`jugador`, `aciertos`, `fallos`, `tiempo`) VALUES('".$_SESSION['jugador'].
 	     "', '".$_SESSION['aciertos']."', '".$_SESSION['fallos']."', '".$_SESSION['tiempo_total']."')";
 	     
 	     $consulta=mysql_query($datos,$conexion);
-	     /*if(!$consulta){
+	     if(!$consulta){
 	          echo 'No se han podido insertar los datos de manera correcta';
 	     }else{
 	          echo 'Perfecto, los datos se insertaron correctamente';
-	     }*/
+	     }
 
 ?>
