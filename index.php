@@ -12,7 +12,6 @@ $_SESSION['tiempo_total'] = "";
 require_once("bd_acceso.php");
 
 $jugador = comprobarUsuario($_POST['Nusuario']);
-echo $_POST['Nusuario'];
 if($_POST) {
 
 		if($_POST['Nusuario'] != '') {

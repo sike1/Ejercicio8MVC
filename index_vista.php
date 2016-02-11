@@ -19,7 +19,7 @@
 
 	<p>Nombre de Usuario</p>
 	
-	<form name='form1' class="form1" action='index.php' method='get'>
+	<form name='form1' class="form1" action='index.php' method='post'>
 	
 	<input type="text" name="Nusuario" id="usuario" required><br>
 	
