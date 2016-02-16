@@ -1,0 +1,6 @@
+-Problemas con la sincronizacion de netbean y GITHUB (branch).
+-Problemas con required_once.
+-No añadir como colaboradores a mis compañeros.
+-Problemas a la hora de enlazar la parte del modelo.
+-Incompatibilidad entre post y get, en la vista los formularios estaban con get y en el controlador recogiamos esos datos cn $_POST.
+-Dudamos en elegir fetch_row o fetch_assoc o fetch_array y al final nos decantamos por el array ya que podemos elegir entre indices y nombres.

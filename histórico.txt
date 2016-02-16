@@ -1,0 +1,12 @@
+Inicialmente, comenzamos separando en cada página del proyecto la parte de código HTML (vista) de la de código PHP (controlador). Por lo tanto
+de cada página del ejercicio obtuvimos un controlador y una vista. A continuación, seguimos con la parte de la bade de datos (modelo), este 
+apartado lo hemos separado en dos partes bien diferenciadas. El primero llamado "bd_abstraccion.php" que incluye las funciones para la conexión
+a la BD, el segundo llamado "bd_acceso.php" en el cual hemos incluido las funciones con las consultas que tienen a la BD.
+
+Todo este proceso lo hemos realizado con GitHub, mediante la herramienta para ello que incluye Netbeans. Una vez finalizado el proyecto lo hemos
+subido a Hostinger para comprobar que funciona correctamente en el servidor.
+
+
+El enlace para probar el proyecto es el siguiente;
+
+www.borjaveracasal.esy.es/ejerciciomvc 
